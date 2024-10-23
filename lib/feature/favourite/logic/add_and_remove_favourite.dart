@@ -14,7 +14,7 @@ class FavouriteCubit extends Cubit<FavouriteState> {
       required String title,
       required String decription,
       required String image,
-      required String overview})async {
+      required String overview}) async {
     emit(AddFavouriteLoading());
     FavouriteModel favouriteModel = FavouriteModel(
       id: id,
@@ -23,7 +23,7 @@ class FavouriteCubit extends Cubit<FavouriteState> {
       image: image,
       overview: overview,
     );
-   await FirebaseFirestore.instance
+    await FirebaseFirestore.instance
         .collection('users')
         .doc(userModel!.uId)
         .collection('favourite')
@@ -38,9 +38,9 @@ class FavouriteCubit extends Cubit<FavouriteState> {
     });
   }
 
-  void removeFavourite({required String id})async {
+  void removeFavourite({required String id}) async {
     emit(RemoveFavouriteLoading());
-   await FirebaseFirestore.instance
+    await FirebaseFirestore.instance
         .collection('users')
         .doc(userModel!.uId)
         .collection('favourite')

@@ -52,7 +52,7 @@ class SignupScreen extends StatelessWidget {
                 const TermsAndConditionsText(),
                 verticalSpacing(30),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 80),
+                  padding: const EdgeInsets.only(left: 75),
                   child: Row(
                     children: [
                       SvgPicture.asset('assets/svg/google.svg'),

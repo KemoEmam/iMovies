@@ -12,10 +12,10 @@ class ApiErrorModel {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['status_code'] = this.statusCode;
-    data['status_message'] = this.statusMessage;
-    data['success'] = this.success;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['status_code'] = statusCode;
+    data['status_message'] = statusMessage;
+    data['success'] = success;
     return data;
   }
 }

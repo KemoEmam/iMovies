@@ -3,7 +3,7 @@ class ApiConstance {
   static const String baseUrl = 'https://api.themoviedb.org/3/';
 
   //api key
-  static const String apiKey = '485dj0138492a1d5e788dc44a5e6c7d9';
+  static const String apiKey = '43a02b138492aa13a788dc44a1b39e55';
 
   //* movies *
   static const String trendingDayUrl = 'trending/all/day';
