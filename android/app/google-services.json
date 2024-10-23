@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "117867078303",
-    "project_id": "movieapp-e6c40",
-    "storage_bucket": "movieapp-e6c40.appspot.com"
+    "project_number": "757274808724",
+    "project_id": "imovies-2bb27",
+    "storage_bucket": "imovies-2bb27.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:117867078303:android:cc43ee6e8a8b6ee718f8aa",
+        "mobilesdk_app_id": "1:757274808724:android:4903b26e2eb132ec623f81",
         "android_client_info": {
-          "package_name": "com.example.clean_architecture_app"
+          "package_name": "com.kemo.iMovies"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDsNs-W3Vp0_NPkDdF9GfbZ1bXzMtJfU6U"
+          "current_key": "AIzaSyAx5o__2UKz2jwLDz-uxnjHhfLtNqj79uM"
         }
       ],
       "services": {
