@@ -59,7 +59,7 @@ class MovieDetailsModel {
     if (json['genres'] != null) {
       genres = <Genres>[];
       json['genres'].forEach((v) {
-        genres!.add(new Genres.fromJson(v));
+        genres!.add(Genres.fromJson(v));
       });
     }
     homepage = json['homepage'];
@@ -74,13 +74,13 @@ class MovieDetailsModel {
     if (json['production_companies'] != null) {
       productionCompanies = <ProductionCompanies>[];
       json['production_companies'].forEach((v) {
-        productionCompanies!.add(new ProductionCompanies.fromJson(v));
+        productionCompanies!.add(ProductionCompanies.fromJson(v));
       });
     }
     if (json['production_countries'] != null) {
       productionCountries = <ProductionCountries>[];
       json['production_countries'].forEach((v) {
-        productionCountries!.add(new ProductionCountries.fromJson(v));
+        productionCountries!.add(ProductionCountries.fromJson(v));
       });
     }
     releaseDate = json['release_date'];
@@ -89,7 +89,7 @@ class MovieDetailsModel {
     if (json['spoken_languages'] != null) {
       spokenLanguages = <SpokenLanguages>[];
       json['spoken_languages'].forEach((v) {
-        spokenLanguages!.add(new SpokenLanguages.fromJson(v));
+        spokenLanguages!.add(SpokenLanguages.fromJson(v));
       });
     }
     status = json['status'];
@@ -99,7 +99,6 @@ class MovieDetailsModel {
     voteAverage = json['vote_average'];
     voteCount = json['vote_count'];
   }
-
 }
 
 class Genres {
@@ -114,9 +113,9 @@ class Genres {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
-    data['name'] = this.name;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['id'] = id;
+    data['name'] = name;
     return data;
   }
 }
@@ -137,11 +136,11 @@ class ProductionCompanies {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
-    data['logo_path'] = this.logoPath;
-    data['name'] = this.name;
-    data['origin_country'] = this.originCountry;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['id'] = id;
+    data['logo_path'] = logoPath;
+    data['name'] = name;
+    data['origin_country'] = originCountry;
     return data;
   }
 }
@@ -158,9 +157,9 @@ class ProductionCountries {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['iso_3166_1'] = this.iso31661;
-    data['name'] = this.name;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['iso_3166_1'] = iso31661;
+    data['name'] = name;
     return data;
   }
 }
@@ -179,10 +178,10 @@ class SpokenLanguages {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['english_name'] = this.englishName;
-    data['iso_639_1'] = this.iso6391;
-    data['name'] = this.name;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['english_name'] = englishName;
+    data['iso_639_1'] = iso6391;
+    data['name'] = name;
     return data;
   }
 }
