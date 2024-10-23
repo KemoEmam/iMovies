@@ -1,4 +1,4 @@
-# MovieMate
+# iMovies
 
 iMovies is a modern movie and TV series browsing app built with Flutter. It offers users an interactive experience with Firebase authentication and a clean, maintainable codebase using the Clean  architecture and Cubit for state management. With its smooth animations and real-time data fetching, users can easily explore trending, top-rated, and upcoming movies and series.
 
